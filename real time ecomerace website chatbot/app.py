@@ -5,10 +5,10 @@ from langchain.tools import BaseTool
 import os
 
 # Set API keys
-os.environ["GOOGLE_API_KEY"] = "AIzaSyA0S7F21ExbBnR06YXkEi7aj94nWP5kJho"
+os.environ["GOOGLE_API_KEY"] = "google_api_key"
 llm = ChatGroq(
     model="llama-3.1-70b-versatile",
-    api_key="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"
+    api_key="groq_api_key"
 )
 
 class MyCustomTool(BaseTool):
